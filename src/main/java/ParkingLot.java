@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import com.google.common.collect.Lists;
 import java.util.List;
 
 public class ParkingLot {
@@ -8,7 +8,7 @@ public class ParkingLot {
 
     public ParkingLot(int capacity) {
         this.capacity = capacity;
-        this.carList = new ArrayList<MyCar>();
+        this.carList = Lists.newArrayList();
     }
 
     public void park(MyCar myCar) {
