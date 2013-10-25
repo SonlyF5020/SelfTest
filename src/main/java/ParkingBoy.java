@@ -23,14 +23,14 @@ public class ParkingBoy {
     }
 
     public void park(MyCar myCar) {
-        List<ParkingLot> availableLots = newArrayList(filter(parkingLotList,new Predicate<ParkingLot>() {
+        List<ParkingLot> availableLots = newArrayList(filter(parkingLotList, new Predicate<ParkingLot>() {
             @Override
             public boolean apply(ParkingLot parkingLot) {
-                return parkingLot.getBlank()>0;
+                return parkingLot.getBlank() > 0;
             }
         }));
 
-        if(availableLots.size()>0){
+        if (availableLots.size() > 0) {
             availableLots.get(0).park(myCar);
         }
     }
@@ -43,5 +43,16 @@ public class ParkingBoy {
             }
         });
         return parkingLotOptional.isPresent();
+    }
+
+    public MyCar getOut(final String token) {
+        List<ParkingLot> targetLot = newArrayList(filter(parkingLotList, new Predicate<ParkingLot>() {
+            @Override
+            public boolean apply(ParkingLot parkingLot) {
+                return parkingLot.getOut(token) != null;
+            }
+        }));
+
+        return targetLot.size() > 0 ? targetLot.get(0).getOut(token) : null;
     }
 }

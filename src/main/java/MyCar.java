@@ -1,6 +1,6 @@
 
 public class MyCar {
-    private final String token;
+    private String token;
 
     public MyCar(String token) {
         this.token = token;
@@ -12,5 +12,9 @@ public class MyCar {
 
     public String getToken() {
         return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }
