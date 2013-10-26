@@ -62,8 +62,9 @@ public class ParkingBoyTest {
         parkingLot.setCapacity(1);
         parkingBoy.control(parkingLot);
         parkingBoy.park(myCar);
+        String wrongToken = "wrong";
 
-        MyCar result = parkingBoy.getOut(myCar.getToken() + "wrong");
+        MyCar result = parkingBoy.getOut(myCar.getToken() + wrongToken);
 
         assertThat(result,nullValue());
     }

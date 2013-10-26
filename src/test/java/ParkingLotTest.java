@@ -49,9 +49,10 @@ public class ParkingLotTest {
     @Test
     public void should_not_get_one_car_when_token_wrong() throws Exception {
         parkingLot.setCapacity(1);
+        String wrongToken = "wrongToken";
 
         parkingLot.park(myCar);
 
-        assertThat(parkingLot.getOut(myCar.getToken()+"wrongToken"),nullValue());
+        assertThat(parkingLot.getOut(myCar.getToken()+ wrongToken),nullValue());
     }
 }
