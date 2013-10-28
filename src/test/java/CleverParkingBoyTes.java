@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
@@ -16,7 +17,7 @@ public class CleverParkingBoyTes {
         parkingLot1 = new ParkingLot();
         parkingLot2 = new ParkingLot();
     }
-
+    @Ignore
     @Test
     public void should_park_car_in_most_blank_lot() throws Exception {
         parkingLot1.setCapacity(4);

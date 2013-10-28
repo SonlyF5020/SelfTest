@@ -10,8 +10,9 @@
     <file path="/ParkingLot.java" changelist="d125cb39-e060-47bb-8a4a-5ee7be1fcdae" time="1382661570513" ignored="false" />
     <file path="/ParkingBoyTest.java" changelist="d125cb39-e060-47bb-8a4a-5ee7be1fcdae" time="1382760912045" ignored="false" />
     <file path="/ParkingBoy.java" changelist="d125cb39-e060-47bb-8a4a-5ee7be1fcdae" time="1382662830443" ignored="false" />
-    <file path="/CleverParkingBoyTes.java" changelist="d125cb39-e060-47bb-8a4a-5ee7be1fcdae" time="1382886696454" ignored="false" />
+    <file path="/CleverParkingBoyTes.java" changelist="d125cb39-e060-47bb-8a4a-5ee7be1fcdae" time="1382887194717" ignored="false" />
     <file path="/CleverParkingBoy.java" changelist="d125cb39-e060-47bb-8a4a-5ee7be1fcdae" time="1382886866236" ignored="false" />
+    <file path="/build.gradle" changelist="d125cb39-e060-47bb-8a4a-5ee7be1fcdae" time="1382887158133" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,9 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ParkingLotTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="51" column="36" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +97,9 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ParkingBoyTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="65" column="23" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +107,7 @@
       <file leaf-file-name="CleverParkingBoyTes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CleverParkingBoyTes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="27" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+            <state line="19" column="11" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,10 +115,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CleverParkingBoy.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CleverParkingBoy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CleverParkingBoy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="179" selection-end="179" vertical-scroll-proportion="0.52427185">
+            <state line="1" column="50" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="78" selection-start="208" selection-end="208" vertical-scroll-proportion="0.63829786">
               <folding />
             </state>
           </provider>
@@ -153,6 +167,78 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="availableTasks">
+      <list>
+        <GradleTaskDescriptor>
+          <option name="description" value="Compiles source set 'test:java'." />
+          <option name="name" value="compileTestJava" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles the outputs of this project." />
+          <option name="name" value="assemble" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project." />
+          <option name="name" value="build" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Processes source set 'test:resources'." />
+          <option name="name" value="processTestResources" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles classes 'test'." />
+          <option name="name" value="testClasses" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Processes source set 'main:resources'." />
+          <option name="name" value="processResources" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Deletes the build directory." />
+          <option name="name" value="clean" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Runs the unit tests." />
+          <option name="name" value="test" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles classes 'main'." />
+          <option name="name" value="classes" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+          <option name="name" value="buildDependents" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project and all projects it depends on." />
+          <option name="name" value="buildNeeded" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Compiles source set 'main:java'." />
+          <option name="name" value="compileJava" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Generates Javadoc API documentation for the main source code." />
+          <option name="name" value="javadoc" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Runs all checks." />
+          <option name="name" value="check" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles a jar archive containing the main classes." />
+          <option name="name" value="jar" />
+        </GradleTaskDescriptor>
+      </list>
+    </option>
+    <option name="expandStates">
+      <map>
+        <entry key="SelfTest" value="true" />
+        <entry key="SelfTest/SelfTest" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -160,9 +246,10 @@
         <option value="$PROJECT_DIR$/src/main/java/MyCar.java" />
         <option value="$PROJECT_DIR$/src/test/java/ParkingLotTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ParkingBoyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CleverParkingBoyTes.java" />
         <option value="$PROJECT_DIR$/src/main/java/ParkingBoy.java" />
         <option value="$PROJECT_DIR$/src/main/java/CleverParkingBoy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CleverParkingBoyTes.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -233,14 +320,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -279,6 +358,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SelfTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SelfTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SelfTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SelfTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,6 +404,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -552,10 +664,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="22" width="1420" height="809" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32969433" sideWeight="0.67198837" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -572,8 +684,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.67198837" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280116" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.67198837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280116" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DSM" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="110" y="122" width="1220" height="609" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -648,13 +760,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ParkingLot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="39" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
@@ -672,14 +777,18 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ParkingLotTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="7" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ParkingBoyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -718,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ParkingLotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="36" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ParkingLot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="17" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
@@ -735,15 +837,8 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ParkingBoyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="23" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CleverParkingBoyTes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -757,7 +852,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CleverParkingBoy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="179" selection-end="179" vertical-scroll-proportion="0.52427185">
+        <state line="1" column="50" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ParkingLotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="36" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CleverParkingBoyTes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="78" selection-start="208" selection-end="208" vertical-scroll-proportion="0.63829786">
           <folding />
         </state>
       </provider>
