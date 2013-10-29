@@ -43,4 +43,8 @@ public class ParkingLot {
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
+
+    public double getBlankRate() {
+        return (double)getBlank()/(double)capacity;
+    }
 }
