@@ -1,9 +1,7 @@
-import com.google.common.base.Predicate;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import static com.google.common.collect.Collections2.filter;
-import static com.google.common.collect.Lists.newArrayList;
 
 public class ParkingLot {
 
@@ -12,11 +10,11 @@ public class ParkingLot {
 
     public ParkingLot(int capacity) {
         this.capacity = capacity;
-        this.carList = newArrayList();
+        this.carList = new ArrayList<MyCar>();
     }
 
     public ParkingLot() {
-        this.carList = newArrayList();
+        this.carList = new ArrayList<MyCar>();
     }
 
     public void park(MyCar myCar) {
@@ -30,13 +28,12 @@ public class ParkingLot {
     }
 
     public MyCar getOut(final String token) {
-        List<MyCar> targetCars = newArrayList(filter(carList, new Predicate<MyCar>() {
-            @Override
-            public boolean apply(MyCar myCar) {
-                return myCar.getToken().equals(token);
+        for (MyCar myCar : carList){
+            if (myCar.getToken().equals(token)){
+                return myCar;
             }
-        }));
-        return targetCars.size() > 0 ? targetCars.get(0) : null;
+        }
+        return null;
     }
 
     public int getBlank() {

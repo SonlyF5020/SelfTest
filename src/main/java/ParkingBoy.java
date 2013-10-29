@@ -1,17 +1,12 @@
-import com.google.common.base.Optional;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Iterables;
 
+import java.util.ArrayList;
 import java.util.List;
-
-import static com.google.common.collect.Collections2.filter;
-import static com.google.common.collect.Lists.newArrayList;
 
 public class ParkingBoy {
     private List<ParkingLot> parkingLotList;
 
     public ParkingBoy() {
-        this.parkingLotList = newArrayList();
+        this.parkingLotList = new ArrayList<ParkingLot>();
     }
 
     public boolean isContainLot(ParkingLot one) {
@@ -23,36 +18,35 @@ public class ParkingBoy {
     }
 
     public void park(MyCar myCar) {
-        List<ParkingLot> availableLots = newArrayList(filter(parkingLotList, new Predicate<ParkingLot>() {
-            @Override
-            public boolean apply(ParkingLot parkingLot) {
-                return parkingLot.getBlank() > 0;
+        ParkingLot target = null;
+        for (ParkingLot parkingLot : parkingLotList){
+            if (parkingLot.getBlank() > 0){
+                target = parkingLot;
+                break;
             }
-        }));
-
-        if (availableLots.size() > 0) {
-            availableLots.get(0).park(myCar);
+        }
+        if (target != null){
+            target.park(myCar);
         }
     }
 
     public boolean isContainCar(final MyCar myCar) {
-        Optional<ParkingLot> parkingLotOptional = Iterables.tryFind(parkingLotList, new Predicate<ParkingLot>() {
-            @Override
-            public boolean apply(ParkingLot parkingLot) {
-                return parkingLot.has(myCar);
+        for (ParkingLot parkingLot : parkingLotList){
+            if (parkingLot.has(myCar)){
+                return true;
             }
-        });
-        return parkingLotOptional.isPresent();
+        }
+        return false;
     }
 
     public MyCar getOut(final String token) {
-        List<ParkingLot> targetLot = newArrayList(filter(parkingLotList, new Predicate<ParkingLot>() {
-            @Override
-            public boolean apply(ParkingLot parkingLot) {
-                return parkingLot.getOut(token) != null;
+        ParkingLot result = null;
+        for (ParkingLot parkingLot : parkingLotList){
+            if (parkingLot.getOut(token) != null){
+                result = parkingLot;
+                break;
             }
-        }));
-
-        return targetLot.size() > 0 ? targetLot.get(0).getOut(token) : null;
+        }
+        return result != null ? result.getOut(token) : null;
     }
 }
