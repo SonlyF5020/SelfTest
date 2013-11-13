@@ -3,6 +3,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.sameInstance;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.nullValue;
 import static org.junit.Assert.assertThat;
@@ -35,7 +36,7 @@ public class ParkingBoyTest {
 
         parkingBoy.park(myCar);
 
-        assertThat(parkingBoy.isContainCar(myCar), is(true));
+        assertThat(parkingLot.getOut(myCar.getToken()), sameInstance(myCar));
     }
 
     @Test
@@ -45,7 +46,7 @@ public class ParkingBoyTest {
 
         parkingBoy.park(myCar);
 
-        assertThat(parkingBoy.isContainCar(myCar),is(false));
+        assertThat(parkingLot.getOut(myCar.getToken()), nullValue());
     }
 
     @Test
@@ -56,7 +57,7 @@ public class ParkingBoyTest {
 
         MyCar result = parkingBoy.getOut(myCar.getToken());
 
-        assertThat(result,is(myCar));
+        assertThat(result, is(myCar));
     }
 
     @Test
@@ -68,6 +69,6 @@ public class ParkingBoyTest {
 
         MyCar result = parkingBoy.getOut(myCar.getToken() + wrongToken);
 
-        assertThat(result,nullValue());
+        assertThat(result, nullValue());
     }
 }

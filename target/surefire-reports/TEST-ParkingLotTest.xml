@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.003" errors="0" skipped="0" tests="4" name="ParkingLotTest">
+<testsuite failures="0" time="0.005" errors="0" skipped="0" tests="4" name="ParkingLotTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/jre/lib"/>
@@ -21,15 +21,15 @@
     <property name="basedir" value="/Users/twer/Downloads/java/SelfTest"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/twer/Downloads/java/SelfTest/target/surefire/surefirebooter5556150780116983919.jar"/>
+    <property name="surefire.real.class.path" value="/Users/twer/Downloads/java/SelfTest/target/surefire/surefirebooter3190227405779316687.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/gv/m43y5g9x1xdc9f2kc2p0kpz00000gn/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="sun.jnu.encoding" value="US-ASCII"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/twer/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="surefire.test.class.path" value="/Users/twer/Downloads/java/SelfTest/target/test-classes:/Users/twer/Downloads/java/SelfTest/target/classes:/Users/twer/.m2/repository/com/google/guava/guava/14.0/guava-14.0.jar:/Users/twer/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/twer/Downloads/java/SelfTest/target/test-classes:/Users/twer/Downloads/java/SelfTest/target/classes:/Users/twer/.m2/repository/com/google/guava/guava/14.0/guava-14.0.jar:/Users/twer/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/Users/twer/.m2/repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar:/Users/twer/.m2/repository/com/telstra/client/eBPMClient/1.3/eBPMClient-1.3.jar:"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -38,13 +38,13 @@
     <property name="user.timezone" value=""/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="java.specification.version" value="1.7"/>
-    <property name="file.encoding" value="US-ASCII"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="twer"/>
-    <property name="java.class.path" value="/Users/twer/Downloads/java/SelfTest/target/test-classes:/Users/twer/Downloads/java/SelfTest/target/classes:/Users/twer/.m2/repository/com/google/guava/guava/14.0/guava-14.0.jar:/Users/twer/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:"/>
+    <property name="java.class.path" value="/Users/twer/Downloads/java/SelfTest/target/test-classes:/Users/twer/Downloads/java/SelfTest/target/classes:/Users/twer/.m2/repository/com/google/guava/guava/14.0/guava-14.0.jar:/Users/twer/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar:/Users/twer/.m2/repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar:/Users/twer/.m2/repository/com/telstra/client/eBPMClient/1.3/eBPMClient-1.3.jar:"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="/Users/twer/Downloads/java/SelfTest/target/surefire/surefirebooter5556150780116983919.jar /Users/twer/Downloads/java/SelfTest/target/surefire/surefire7966792374494635634tmp /Users/twer/Downloads/java/SelfTest/target/surefire/surefire6303842988404578531tmp"/>
+    <property name="sun.java.command" value="/Users/twer/Downloads/java/SelfTest/target/surefire/surefirebooter3190227405779316687.jar /Users/twer/Downloads/java/SelfTest/target/surefire/surefire8126616729006245515tmp /Users/twer/Downloads/java/SelfTest/target/surefire/surefire4485673512534331226tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>

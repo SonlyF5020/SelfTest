@@ -33,6 +33,13 @@
             <artifactId>mockito-all</artifactId>
             <version>1.9.5</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.telstra.client</groupId>
+            <artifactId>eBPMClient</artifactId>
+            <version>1.3</version>
+        </dependency>
+
     </dependencies>
 
 

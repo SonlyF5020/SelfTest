@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.006" errors="0" skipped="0" tests="5" name="ParkingBoyTest">
+<testsuite failures="0" time="0.001" errors="0" skipped="1" tests="1" name="SmartParkingBoyTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/jre/lib"/>
@@ -35,7 +35,7 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.8"/>
     <property name="user.home" value="/Users/twer"/>
-    <property name="user.timezone" value=""/>
+    <property name="user.timezone" value="Australia/Melbourne"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -60,9 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0" classname="ParkingBoyTest" name="should_manage_parking_lot"/>
-  <testcase time="0.001" classname="ParkingBoyTest" name="boy_should_park_car_success"/>
-  <testcase time="0.001" classname="ParkingBoyTest" name="should_not_park_when_all_lot_is_full"/>
-  <testcase time="0" classname="ParkingBoyTest" name="should_get_out_one_car_by_right_token"/>
-  <testcase time="0.001" classname="ParkingBoyTest" name="should_not_get_out_one_car_by_wrong_token"/>
+  <testcase time="0.116" classname="SmartParkingBoyTest" name="should_park_car_in_most_blank_rate_lot">
+    <skipped/>
+  </testcase>
 </testsuite>

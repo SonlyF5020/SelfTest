@@ -1,15 +1,20 @@
 import java.util.List;
 
 public class SmartChooser implements Chooser {
+
     @Override
-    public ParkingLot choseParkingLot(List<ParkingLot> parkingLotList) {
-        if (parkingLotList.size() == 0){
+    public Parkable choseParkable(List<Parkable> list) {
+        if (list.size() == 0){
             return null;
         }
-        ParkingLot target = parkingLotList.get(0);
-        for (ParkingLot parkingLot:parkingLotList){
-            if (parkingLot.getBlankRate() > target.getBlankRate()){
-                target = parkingLot;
+
+        ParkingLot target = (ParkingLot) list.get(0);
+
+        for (Parkable parkingLot:list){
+            ParkingLot realLot = (ParkingLot) parkingLot;
+
+            if (realLot.getBlankRate() > target.getBlankRate()){
+                target = realLot;
             }
         }
         return target;

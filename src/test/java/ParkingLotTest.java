@@ -24,7 +24,7 @@ public class ParkingLotTest {
 
         parkingLot.park(myCar);
 
-        assertThat(parkingLot.has(myCar),is(true));
+        assertThat(parkingLot.contains(myCar), is(true));
     }
 
     @Test
@@ -33,7 +33,7 @@ public class ParkingLotTest {
         parkingLot.park(myCar);
         parkingLot.park(myNewCar);
 
-        assertThat(parkingLot.has(myNewCar),is(false));
+        assertThat(parkingLot.contains(myNewCar), is(false));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class ParkingLotTest {
 
         parkingLot.park(myCar);
 
-        assertThat(parkingLot.getOut(myCar.getToken()),is(myCar));
+        assertThat(parkingLot.getOut(myCar.getToken()), is(myCar));
     }
 
 
@@ -53,6 +53,6 @@ public class ParkingLotTest {
 
         parkingLot.park(myCar);
 
-        assertThat(parkingLot.getOut(myCar.getToken()+ wrongToken),nullValue());
+        assertThat(parkingLot.getOut(myCar.getToken() + wrongToken), nullValue());
     }
 }

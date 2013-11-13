@@ -1,12 +1,14 @@
 import java.util.List;
 
 public class GenericChooser implements Chooser {
+
     @Override
-    public ParkingLot choseParkingLot(List<ParkingLot> parkingLotList) {
-        ParkingLot target = null;
-        for (ParkingLot parkingLot : parkingLotList){
-            if (parkingLot.getBlank() > 0){
-                target = parkingLot;
+    public Parkable choseParkable(List<Parkable> parkables) {
+        Parkable target = null;
+
+        for (Parkable parkable : parkables){
+            if (parkable.isAvaiable()){
+                target = parkable;
                 break;
             }
         }

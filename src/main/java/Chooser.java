@@ -1,5 +1,5 @@
 import java.util.List;
 
 public interface Chooser {
-    public ParkingLot choseParkingLot(List<ParkingLot> parkingLotList);
+    public Parkable choseParkable(List<Parkable> list);
 }
